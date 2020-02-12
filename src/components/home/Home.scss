@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "news-gothic.otf";
+    src: url(../../styles/fonts/news-gothic.otf);
+}
+header {
+    background-color:rgba(33, 33, 33, 0.9);
+    color:#ffffff;
+    display:block;
+    font: 14px/1.3 Arial,sans-serif;
+    height:50px;
+    position:relative;
+    z-index:5;
+}
+h2{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.containerFilms {
+    margin-top: 10vh;
+    border: white;
+    border-style: solid;
+    border-width: 3px;
+    height: 15vh;
+    position: relative;
+    border-left: 0px;
+    border-right: 0px;
+    align-content: space-between;
+}
+
+.films {
+    color: #ffea00;
+    font-size: 2vh;
+    text-align: center;
+    font-family: 'news-gothic.otf';
+}
+
+
+.planets {
+    border: white;
+    border-style: solid;
+    border-width: 3px;
+    height: 15%;
+    position: relative;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    align-content: space-between;
+}
+
+.namePlanet {
+    color: #ffea00;
+    font-size: 5vh;
+    text-align: center;
+    font-family: 'news-gothic.otf';
+    
+}
+
+.planetIcon {
+    width: 8vh;
+    float: left;
+}
+
+.childrens {
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+    padding-top: 2vh;
+    font-family: 'news-gothic.otf';
+    margin-right: 12vh;
+}
+
+header a, a:visited {
+    text-decoration:none;
+    color:#fcfcfc;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.header {
+    text-align: center;
+}
+
+
+.logo {
+    width: 25vh;
+}
+
+.planetImage {
+    width: 35vh;
+    float:left;
+    margin-top: 10vh;
+    margin-left: -23vh;
+}
+
+.texto {
+    color: white;
+    text-align: center;
+    font-size: medium;
+    font-family:'Starjhol.ttf';
+}
+
+.container {
+    border: white;
+    border-width: 10px;
+    height: 55vh;
+    border-style: double;
+    border-radius: 10%;
+    position: relative;
+    
+}
+
+.containerPrincipal {
+        height: 55vh;
+        position: relative;
+        
+}
+
+.buttonNextContainer {
+    margin-top: 1.9%;
+    position: relative;
+    text-align: center;
+}
+.buttonNext {
+   position: absolute;
+   text-align: center;
+}
+
+.stars, .twinkling {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display: flexbox;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
