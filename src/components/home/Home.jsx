@@ -25,7 +25,7 @@ class Home extends Component {
     this.setState({
       numbPlanets: Math.floor(Math.random() * (max - min)) + min
     });
-    let url = "https://swapi.co/api/planets/" + this.state.numbPlanets;
+    let url = "https://swapi.dev/api/planets/" + this.state.numbPlanets;
     axios
       .get(url)
       .then(response => {
